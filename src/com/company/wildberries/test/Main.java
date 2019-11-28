@@ -20,5 +20,9 @@ public class Main {
 
         sprinter1.start();
         sprinter2.start();
+
+        if (!(sprinter1.isAlive() && sprinter2.isAlive())) {
+            sprinter1.getWriter().close();
+        }
     }
 }

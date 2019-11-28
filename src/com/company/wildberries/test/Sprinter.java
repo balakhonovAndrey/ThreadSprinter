@@ -15,6 +15,10 @@ public class Sprinter extends Thread {
         this.filePath = filePath;
     }
 
+    public static FileWriter getWriter() {
+        return writer;
+    }
+
     @Override
     public void run() {
 
